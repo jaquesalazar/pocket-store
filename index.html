@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PocketStore - Catálogo web con soporte offline">
+    <meta name="theme-color" content="#d97b96" >
+    <title>PocketStore</title>
+    <link rel="manifest" href="./manifest.json">
+    <link rel="icon" type="image/png" href="./Icon/icono1.png">
+    <link rel="stylesheet"href="./styles.css">
+</head>
+
+
+<body>
+    <header class="app-header">
+        <div class="header-content">
+            <div>
+                <h1>PocketStore</h1>
+                <p> Tu catálogo siempre disponible </p>
+            </div>
+
+            <span id="connection-status" class="status online" >
+                En línea
+            </span>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <section class="catalog-header">
+            <h2>Catálogo</h2>
+            <p> Explora nuestro catálogo de productos. </p>
+        </section>
+
+        <section id="product-container"class="product-grid" aria-live="polite">
+            <p class="message">
+                Cargando productos...
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="app-footer">
+        <p> &copy; 2026 PocketStore · PWA con Vanilla JavaScript </p>
+    </footer>
+
+    <script src="./app.js" defer></script>
+
+</body>
+
+</html>
